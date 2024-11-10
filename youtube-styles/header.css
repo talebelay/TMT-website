@@ -1,0 +1,155 @@
+.header {
+  height: 45px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: white;
+  border-bottom: 1px solid rgb(241, 237, 237);
+
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 16px;
+  margin-right: 24px;
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex: 1;
+  height: 27px;
+  padding-left: 10px;
+  border: 1px solid rgb(216, 212, 212);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 0;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, Arial;
+}
+
+.search-button {
+  height: 31px;
+  width: 50px;
+  border: 1px solid rgb(216, 212, 212);
+  background-color: rgb(242, 240, 240);
+  margin-left: -1px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 10px;
+}
+
+.search-button,
+.voice-search-button {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  left: 5px;
+  font-size: 9px;
+  background-color: grey;
+  color: white;
+  padding: 6px 4px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 200;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 20px;
+  margin-top: 3px;
+}
+
+.voice-search-button {
+  height: 30px;
+  border:none;
+  border-radius: 30px;
+}
+
+.voice-search-icon {
+  height: 20px;
+  margin-top: 2px;
+}
+
+.right-section {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.upload {
+  width: 20px;
+}
+
+.youtube-apps {
+  width: 20px;
+}
+
+.notifications {
+  width: 20px;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -1px;
+  right: -3px;
+  font-size: 10px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  padding: 1px 4px;
+  border-radius: 12px;
+}
+
+.my-channel {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
